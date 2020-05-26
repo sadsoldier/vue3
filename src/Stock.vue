@@ -2,11 +2,13 @@
 {
   "en": {
     "stock": "Stock",
-    "order": "order"
+    "order": "order",
+    "to order": "to order"
   },
   "ru": {
     "stock": "Склад",
-    "order": "Заказ"
+    "order": "Заказ",
+    "to order": "в заказ"
   }
 }
 </i18n>
@@ -28,7 +30,7 @@
                                 <th>name</th>
                                 <th>count</th>
                                 <th>cost</th>
-                                <th>to order</th>
+                                <th>{{ $t('to order') }}</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -38,7 +40,7 @@
                                 <td>{{ item.name }}</td>
                                 <td>{{ item.count }}</td>
                                 <td>{{ item.cost }}</td>
-                                <td><button class="btn btn-primary" v-on:click="addOrder(item, index)">to order</button></td>
+                                <td><button class="btn btn-primary" v-on:click="addOrder(item, index)">{{ $t('to order') }}</button></td>
 
                             </tr>
                         </tbody>

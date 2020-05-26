@@ -8,7 +8,7 @@
             </button>
 
             <div class="navbar-brand">
-                <i class="fab fa-old-republic fa-lg"></i> V2
+                <i class="fab fa-old-republic fa-lg"></i> V3
             </div>
 
             <ul class="navbar-nav mr-auto">
