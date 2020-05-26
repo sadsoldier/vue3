@@ -1,5 +1,7 @@
 
 import Vue from 'vue'
+import VueI18n from 'vue-i18n'
+
 
 import App from './App.vue'
 
@@ -18,7 +20,22 @@ library.add(far)
 
 Vue.config.productionTip = false
 
+Vue.use(VueI18n)
+
+const i18n = new VueI18n({
+    locale: 'ru',
+    messages: {
+        en: {
+            "stock": "Stock"
+        },
+        ru: {
+            "stock": "Склад"
+        }
+    }
+})
+
 new Vue({
+    i18n,
     router,
     store,
     render: h => h(App)

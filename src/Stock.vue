@@ -1,3 +1,17 @@
+<i18n>
+{
+  "en": {
+    "stock": "Stock",
+    "order": "order"
+  },
+  "ru": {
+    "stock": "Склад",
+    "order": "Заказ"
+  }
+}
+</i18n>
+
+
 <template>
 
     <div id="seller" class="container">
@@ -5,7 +19,7 @@
         <div class="row justify-content-center">
             <div class="col-sm-9 ">
 
-                    <h4><i class="fas fa-home"></i> Stock</h4>
+                    <h4><i class="fas fa-home"></i> {{ $t('stock') }}</h4>
                     <table class="table table-striped table-hover table-sm">
                         <thead>
                             <tr>
@@ -31,7 +45,7 @@
 
                     </table>
 
-                    <h4><i class="fas fa-truck-loading"></i> Order</h4>
+                    <h4><i class="fas fa-truck-loading"></i> {{ $t('order') }}</h4>
 
                     <table class="table  table-striped table-hover table-sm">
                         <thead>

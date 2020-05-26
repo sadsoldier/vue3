@@ -14,7 +14,7 @@
             <ul class="navbar-nav mr-auto">
 
                 <li class="nav-item">
-                    <router-link to="/" class="nav-link">Stock</router-link>
+                    <router-link to="/" class="nav-link">{{ $t('stock') }}</router-link>
                 </li>
 
                 <li class="nav-item">
@@ -25,6 +25,8 @@
                     <router-link to="/about" class="nav-link">About</router-link>
                 </li>
             </ul>
+
+
 
         </nav>
 
