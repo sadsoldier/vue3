@@ -31,9 +31,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col col-10 col-sm-10 col-md-9 col-lg-8 mt-4 mx-auto">
-
-                    <router-view />
-
+                    <transition>
+                        <keep-alive>
+                            <router-view />
+                        </keep-alive>
+                    </transition>
                 </div>
             </div>
         </div>
